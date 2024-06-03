@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Image Generator</title>
+</head>
+<body>
+    <h1>Generate a Cartoon Image</h1>
+    <form method="post">
+        <label for="prompt">Enter your prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Generate</button>
+    </form>
+    {% if image_path %}
+        <h2>Generated Image:</h2>
+        <img src="{{ image_path }}" alt="Generated Cartoon">
+    {% endif %}
+</body>
+</html>
