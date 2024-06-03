@@ -14,7 +14,7 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float
 pipe.to(device)
 
 # Define the prompt
-prompt = "a cartoon of a happy cat playing in a garden"
+prompt = "A nerd cat wearing glasses and solve math problems on the blackboard."
 
 # Generate the image
 image = pipe(prompt).images[0]
